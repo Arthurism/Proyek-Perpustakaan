@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Kontak | Perpustakaan SMAN 1 Yogyakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="/assets/logo-teladan.png" alt="Logo Perpustakaan" style="display: inline; margin: 0 auto; width: 70px; height: auto;">
+        <h1 style="text-align: center; font-family: 'Oswald', sans-serif; display: inline; transform: translate(0, -10px); position: absolute;">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
+    </div>
+    <div class="header-buttons">        
+        <a href="index.html">
+            <button class="button-header">BERANDA</button></a>
+        <a href="buku.html">
+            <button class="button-header">BUKU</button></a>
+        <a href="kontak.html">
+            <button class="button-header" style="background-color: lightgray;" disabled>KONTAK</button></a>
+        </div>
+    <hr style="border-color: darkred;">
+    <h2>Kontak</h2>
+    <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+        <label for="kelas">Kelas:</label>
+        <select id="kelas" name="kelas" required>
+            <option value="XII1">XII F1</option>
+            <option value="XII2">XII F2</option>
+            <option value="XII3">XII F3</option>
+            <option value="XII4">XII F4</option>
+            <option value="XII5">XII F5</option>
+        </select><br><br>
+        <label for="pertanyaan">Pertanyaan:</label><br>
+        <textarea id="pertanyaan" name="pertanyaan" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>

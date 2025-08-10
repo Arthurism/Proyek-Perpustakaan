@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Katalog | Perpustakaan SMAN 1 Yogyakarta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="/assets/logo-teladan.png" alt="Logo Perpustakaan" style="display: inline; margin: 0 auto; width: 70px; height: auto;">
+        <h1 style="text-align: center; font-family: 'Oswald', sans-serif; display: inline; transform: translate(0, -10px); position: absolute;">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
+    </div>
+    <div class="header-buttons">        
+        <a href="index.html">
+            <button class="button-header">BERANDA</button></a>
+        <a href="buku.html">
+            <button class="button-header" style="background-color: lightgray;" disabled>BUKU</button></a>
+        <a href="kontak.html">
+            <button class="button-header">KONTAK</button></a>
+    </div>
+    <hr style="border-color: darkred;">
+    <h2>Daftar Buku</h2>
+    <table cellpadding="8" bordercolor="antiquewhite" border="1" cellspacing="0" bgcolor="darkred" style="border-collapse: collapse; color: white;">
+        <tr>
+            <th>No.</th>
+            <th>Cover</th>
+            <th>Judul</th>
+            <th>Penulis</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td class="t-num">1</td>
+            <td><img src="/assets/cover-buku-1.jpg" alt="Cover Buku 1" style="width: 100px; height: auto;"></td>
+            <td>Belajar HTML dan CSS</td>
+            <td>John Doe</td>
+            <td>Tersedia</td>
+        </tr>
+        <tr>
+            <td class="t-num">2</td>
+            <td><img src="/assets/cover-buku-2.jpg" alt="Cover Buku 2" style="width: 100px; height: auto;"></td>
+            <td>Pengantar JavaScript</td>
+            <td>Jane Smith</td>
+            <td>Tersedia</td>
+        </tr>
+        <tr>
+            <td class="t-num">3</td>
+            <td><img src="/assets/cover-buku-3.jpg" alt="Cover Buku 3" style="width: 100px; height: auto;"></td>
+            <td>Dasar-Dasar Python</td>
+            <td>Ali Ahmad</td>
+            <td>Sedang Dipinjam</td>
+        </tr>
+        <tr>
+            <td class="t-num">4</td>
+            <td><img src="/assets/cover-buku-4.jpg" alt="Cover Buku 4" style="width: 100px; height: auto;"></td>
+            <td>Belajar Database MySQL</td>
+            <td>Siti Fatimah</td>
+            <td>Tersedia</td>
+        </tr>
+    </table>
+</body>
+</html>
