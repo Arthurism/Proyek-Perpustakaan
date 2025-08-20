@@ -1,52 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
+<link rel="stylesheet" href="styles.css">
 <head>
     <title>Katalog | Perpustakaan SMAN 1 Yogyakarta</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo-teladan512.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="header">
-        <img src="assets/logo-teladan.png" alt="Logo Perpustakaan" style="display: inline; margin: 0 auto; width: 70px; height: auto;">
-        <h1 style="text-align: center; font-family: 'Oswald', sans-serif; display: inline; transform: translate(0, -10px); position: absolute;">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
-    </div>
-    <div class="header-buttons">        
-        <a href="index.html">
-            <button class="button-header">BERANDA</button></a>
-        <a href="buku.html">
-            <button class="button-header" style="background-color: lightgray;" disabled>BUKU</button></a>
-        <a href="kontak.html">
-            <button class="button-header">KONTAK</button></a>
-    </div>
-    <hr style="border-color: darkred;">
+    <header>
+        <div class="header-title">
+            <img src="assets/logo-teladan.png" alt="Logo Perpustakaan" style="display: inline; margin: 0 auto; width: 70px; height: auto;">
+            <h1 style="text-align: center; font-family: 'Oswald', sans-serif; display: inline; transform: translate(0, -10px); position: absolute; user-select: none; -webkit-user-select: none;">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
+        </div>
+        <div class="header-buttons">        
+            <a href="index.html">
+                <button class="button-header">BERANDA</button></a>
+            <a href="buku.html">
+                <button class="button-header">BUKU</button></a>
+            <a href="kontak.html">
+                <button class="button-header">KONTAK</button></a>
+        </div>
+    </header>
     <div class="latest-books">
         <h2>Buku Terbaru</h2>
         <div class="book-list">
           <article class="book-card">
             <img class="bukugambar" src="assets/JendralWito.jpg" alt="Belajar HTML dan CSS">
             <h3>Perjuangan Jendral Wito</h3>
-            <p>Oleh : Kapten Inf. Sujana</p>
+            <p>Oleh: Kapten Inf. Sujana</p>
             <a href="buku_1.html" class="btn">Selengkapnya</a>
           </article>
           <article class="book-card">
              <img class="bukugambar" src="assets/Adobe Express - file.jpg" alt="Belajar HTML dan CSS">
             <h3>The Birth Of Hizbul Wathan</h3>
-            <p>Oleh : Ludirman</p>
+            <p>Oleh: Ludirman</p>
             <a href="buku_2.html" class="btn">Selengkapnya</a>
           </article>
           <article class="book-card">
             <img class="bukugambar" src="assets/WhatsApp Image 2025-08-19 at 22.20.07_f01b2064.jpg" alt="Belajar HTML dan CSS">
             <h3>Deffa Arif Maulana AKBAR</h3>
-            <p>Oleh : A.A. Hadir</p>
+            <p>Oleh: A.A. Hadir</p>
             <a href="buku_3.html" class="btn">Selengkapnya</a>
           </article>
+          <article class="book-card">
+            <img class="bukugambar" src="assets/Gambarbuvan.jpg" alt="Belajar HTML dan CSS">
+            <h3>Keluh Kesah Seorang Mitra</h3>
+            <p>Oleh: Buvan Rizky Aji</p>
+            <a href="buku_4.html" class="btn">Selengkapnya</a>
+          </article>
+          <article class="book-card">
+             <img class="bukugambar" src="assets/gambarfian.jpg" alt="Belajar HTML dan CSS">
+            <h3>Rahasia Tinggi Badan 190 cm</h3>
+            <p>Oleh: Muhammad Hanafi Adnan Zulfian</p>
+            <a href="buku_5.html" class="btn">Selengkapnya</a>
+          </article>
+          <article class="book-card">
+            <img class="bukugambar" src="assets/Misteri-Raja-Racun.png" alt="Belajar HTML dan CSS">
+            <h3>Misteri Raja Racun</h3>
+            <p>Oleh: Ir. H. Wowok</p>
+            <a href="buku_6.html" class="btn">Selengkapnya</a>
+          </article>
         </div>
-      </div>
-      <div style="display: flex;
-      justify-content: center;">
-      <a href="buku_page2.html"><button class="button-header" style="width:120px; font-size: smaller; border-radius: 15%; ">BERIKUTNYA>>></button></a>
-      </div>
+    </div>
+    <footer>
+        <p>© Kelompok Nala, Rozaq, Bili, Satrio</p>
+    </footer>
 </body>
 </html>

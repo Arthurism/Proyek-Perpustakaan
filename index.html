@@ -1,69 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title>Beranda | Perpustakaan SMAN 1 Yogyakarta</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo-teladan512.png">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: gray;
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
 
+<body>
     <header>
-         <div class="header">
-        <img src="assets/logo-teladan.png" alt="Logo Perpustakaan" style="display: inline; margin: 0 auto; width: 70px; height: auto;">
-        <h1 style="text-align: center; font-family: 'Oswald', sans-serif; display: inline; transform: translate(0, -10px); position: absolute;">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
-    </div>
-    <div class="header-buttons">        
-        <a href="index.html">
-            <button class="button-header" style="background-color: lightgray;" disabled>BERANDA</button></a>
-        <a href="buku.html">
-            <button class="button-header">BUKU</button></a>
-        <a href="kontak.html">
-            <button class="button-header">KONTAK</button></a>
-    </div>
-    <div class="header-container">
-        <div class="header-text">
-            <h1>Perpustakaan SMA Negeri 1 Yogyakarta</h1>
-            <p>
-                Selamat Datang di website
-                <span class="highlight">Perpustakaan SMA Negeri 1 Yogyakarta</span> 
-                <span class="highlight">Perpustakaan SMA Negeri 1 Yogyakarta</span> 
-                ini diperuntukkan untuk siapa saja yang ingin membaca buku-buku populer seputar sains, fiksi, dan ilmu sosial
+        <div class="header-title">
+            <img src="assets/logo-teladan.png" alt="Logo Perpustakaan" style="display: inline; margin: 0 auto; width: 70px; height: auto;">
+            <h1 style="text-align: center; font-family: 'Oswald', sans-serif; display: inline; transform: translate(0, -10px); position: absolute; user-select: none; -webkit-user-select: none;">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
+        </div>
+        <div class="header-buttons">        
+            <a href="index.html">
+                <button class="button-header">BERANDA</button></a>
+            <a href="buku.html">
+                <button class="button-header">BUKU</button></a>
+            <a href="kontak.html">
+                <button class="button-header">KONTAK</button></a>
+        </div>
+    </header>
+    <div class="front-container">
+        <div class="front-text">
+            <h1 class="shadowed">Perpustakaan SMA Negeri 1 Yogyakarta</h1>
+            <p class="shadowed">
+                Selamat Datang di website <span class="highlight">Perpustakaan SMA Negeri 1 Yogyakarta</span>.
+                Web ini diperuntukkan untuk siapa saja yang ingin membaca buku-buku populer seputar sains, fiksi, dan ilmu sosial
             </p>
         </div>
         <div>
             <img src="assets/pembacabukurembg.png" alt="ilustrasi buku" class="header-image">
         </div>
     </div>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-<body>
-    <div class="kelebihan-container">
-        <h2 class="kelebihan-title">Kelebihan Perpustakaan Teladan</h2>
-        <div class="kelebihan-list">
-            <div class="kelebihan-card">
-                <p class="kelebihan-text">Dibuat oleh Nala, Rojak, Bili, Satrio</p>
-            </div>
-            <div class="kelebihan-card">
-                <p class="kelebihan-text">Aman, Praktis, dan Efisien.</p>
-            </div>
-            <div class="kelebihan-card">
-                <p class="kelebihan-text">mantap</p>
-            </div>
-            <div class="kelebihan-card">
-                <p class="kelebihan-text">keren</p>
-            </div>
-        </div>
-    </div>
+    <footer>
+        <p>© Kelompok Nala, Rozaq, Bili, Satrio</p>
+    </footer>
 </body>
 
 </html>
