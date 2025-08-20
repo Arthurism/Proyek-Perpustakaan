@@ -1,3 +1,4 @@
+
 /* HEADER */
 .button-header {
     color: black;
@@ -59,7 +60,69 @@ th {
 
 
 /* BAGIAN BERANDA */
-
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+        }
+        .header-text {
+            max-width: 55%;
+        }
+        .header-text h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        .header-text p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .highlight {
+            color: #a00d0d;
+        }
+        .header-image {
+            max-width: 350px;
+        }
+        
+ .kelebihan-container {
+            background: #fff;
+            padding: 40px 0 30px 0;
+        }
+        .kelebihan-title {
+            color:#a00d0d;
+            text-align: center;
+            margin-bottom: 32px;
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .kelebihan-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0 10%;
+        }
+        .kelebihan-card {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            padding: 20px;
+            width: 220px;
+            height: 20px;
+            text-align: center;
+            vertical-align: center;
+            transition-duration: 500ms;
+        }
+        .kelebihan-card:hover {
+                cursor: pointer;
+                box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+        }
+        .kelebihan-text {
+            color: #a00d0d;
+            font-weight: bold;
+            font-size: 15px;
+            margin: 0;
+        }
 /* BAGIAN BUKU */
 .latest-books {
     padding: 40px 20px;
