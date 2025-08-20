@@ -22,26 +22,36 @@
                 <button class="button-header">KONTAK</button></a>
         </div>
     </header>
-    <h2>Kontak</h2>
-    <form>
-        <label for="nama">Nama:</label>
-        <input type="text" id="nama" name="nama" required><br><br>
-        <label for="kelas">Kelas:</label>
-        <select id="kelas" name="kelas" required>
-            <option value="XII1">XII F1</option>
-            <option value="XII2">XII F2</option>
-            <option value="XII3">XII F3</option>
-            <option value="XII4">XII F4</option>
-            <option value="XII5">XII F5</option>
-            <option value="XII6">XII F6</option>
-            <option value="XII7">XII F7</option>
-        </select><br><br>
-        <label for="pertanyaan">Pertanyaan:</label><br>
-        <textarea id="pertanyaan" name="pertanyaan" rows="4" cols="50" required></textarea><br><br>
-        <input type="submit" value="Kirim">
-    </form>
-<footer>
-    <p>© Kelompok Nala, Rozaq, Bili, Satrio</p>
-</footer>
+
+    <div class="content">
+        <div class="contact-container">
+            <h2>Kontak</h2>
+            <form id="contactForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required><br><br>
+                <label for="kelas">Kelas:</label>
+                <select id="kelas" name="kelas" required>
+                    <option value="XII1">XII F1</option>
+                    <option value="XII2">XII F2</option>
+                    <option value="XII3">XII F3</option>
+                    <option value="XII4">XII F4</option>
+                    <option value="XII5">XII F5</option>
+                    <option value="XII6">XII F6</option>
+                    <option value="XII7">XII F7</option>
+                </select><br><br>
+                <label for="pertanyaan">Pertanyaan:</label><br>
+                <textarea id="pertanyaan" name="pertanyaan" rows="4" cols="50" required></textarea><br><br>
+                <input class="submit-button" type="submit" value="Kirim" onclick="submitForm()">
+            </form>
+        </div>
+    </div>
+
+    <div id="results"></div>
+
+    <footer>
+        <p>© Kelompok Nala, Rozaq, Bili, Satrio</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

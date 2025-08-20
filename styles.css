@@ -14,6 +14,11 @@ body {
     flex-direction: column;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 .shadowed {
     text-shadow: 0px 0px 10px lightgray;
 }
@@ -46,15 +51,14 @@ header {
     height: auto;
     top: 50%;
     margin-right: 10px;
-
 }
 
 .button-header {
     color: white;
     background-color: rgba(0,0,0,0);
     width: auto;
-    transition: border-color 0.3s ease-in-out;
-    height: auto;
+    transition: height 0.3s ease-in-out;
+    height: 32px;
     font-size: larger;
     font-weight: bolder;
     border-radius: 0px;
@@ -65,7 +69,8 @@ header {
 
 .button-header:hover {
     cursor: pointer;
-    border-bottom: 2px solid white
+    border-bottom: 2px solid white;
+    height: 35px;
 }
 
 /* footer */
@@ -239,15 +244,17 @@ background-color: #a30000;
 
 /* Bagian isi buku */
 .buku-cabang {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  background: #e0e0e0;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  max-width: 1000px;
-  margin: 30px auto;
-  align-items: stretch; 
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(214,214,214,0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25), 0px 0px 21.3px 16px rgba(255,255,255,0.25) inset;
+    border: 1px solid white;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    align-items: stretch; 
 }
 
 .gambar_buku {
@@ -281,6 +288,10 @@ background-color: #a30000;
 .info_buku table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.info_buku td {
+    text-align: justify;
 }
 
 .info_buku tr th, .info_buku tr td {
@@ -328,4 +339,53 @@ background-color: #a30000;
   height: auto;
   vertical-align: top;
   padding: 5px;
+}
+
+/* BAGIAN KONTAK */
+.contact-container {
+    background: rgba(214,214,214,0.5);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25), 0px 0px 21.3px 16px rgba(255,255,255,0.25) inset;
+    border: 1px solid white;
+    text-align: left;
+    width: 360px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contact-container textarea {
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: darkred;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #a30000;
+}
+
+input, textarea {
+    font-size: 11pt;
 }
