@@ -1,3 +1,4 @@
+/* HEADER */
 .button-header {
     color: black;
     background-color: white;
@@ -55,6 +56,11 @@ td {
 th {
     font-family: sans-serif;
 }
+
+
+/* BAGIAN BERANDA */
+
+/* BAGIAN BUKU */
 .latest-books {
     padding: 40px 20px;
     text-align: center;
@@ -67,7 +73,6 @@ th {
     color: darkred;
   }
   
-  /* Pakai grid untuk fleksibilitas */
   .book-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -93,9 +98,10 @@ th {
     transform: translateY(-5px) scale(1.03);
     background-color: rgb(240, 191, 191);
   }
-  .bukugambar {
-      padding: 10px;
-      border-radius: 20px;
+  .bukugambar {     
+  object-fit: cover;   
+  border-radius: 20px;
+  padding: 10px;
   }
   
   .book-card img {
@@ -128,26 +134,90 @@ th {
     background-color: #a30000;
   }
   
-/* .Slider {
-    height: 250px;
-    margin: auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    place-items: center;
+
+/* Bagian isi buku */
+.buku-cabang {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 1000px;
+  margin: 30px auto;
+  align-items: stretch; 
 }
 
-.slide-track {
-    display: flex;
-    width: calc(250px * 10);
+.gambar_buku {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.slide {
-    height: 200px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
+.gambar_buku img {
+  width: 100%;
+  height: 100%;  
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-img { width: 100%;} */
+.info_buku {
+  flex: 2;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch;
+}
+
+.info_buku table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info_buku tr:hover th,
+.info_buku tr:hover td {
+  background-color: #e0e0e0
+}
+
+.button-kembalii {
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: center;}
+
+.button-kembali {
+  color: black;
+  background-color: white;
+  transition-duration: 500ms;
+  width: 200px;
+  height: 45px;
+  font-size: large;
+  font-weight: bolder;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  border: none;
+}
+
+.button-kembali:hover {
+  cursor: pointer;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+  background-color: rgb(240, 191, 191);
+}
+
+.info_buku th {
+  text-align: left;
+  width: 120px;
+  vertical-align: top;
+  padding: 5px;
+}
+
+.info_buku td {
+  margin-top: 0;
+  height: auto;
+  vertical-align: top;
+  padding: 5px;
+}
